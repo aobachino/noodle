@@ -5,5 +5,6 @@ cp .env.dev.sample .env.dev
 docker-compose run --rm rails rails new . --skip --database=mysql --skip-bundle --skip-git --skip-test
 
 cp -f template/database.yml config/database.yml
+cp -f template/utf8mb4.rb config/initializers/utf8mb4.rb
 
 docker-compose run --rm rails bundle exec spring binstub --all
