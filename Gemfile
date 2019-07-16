@@ -14,19 +14,22 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'rails-ujs'
+gem 'ransack'
 
 # user関連処理
-# gem 'devise'
-# gem 'cancancan'
-# gem 'rails_admin'
+gem 'devise'
+gem 'cancancan'
+gem 'switch_user'
+gem 'rails_admin'
 
 # bootstrap
-# gem 'bootstrap', '~> 4.1.1'
-# gem 'jquery-rails'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'jquery-rails'
 
 group :development, :test do
-  gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'pry-rails'
   gem 'pry-doc'
 end
 

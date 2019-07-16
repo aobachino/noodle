@@ -1,0 +1,29 @@
+.container#pages--user
+  .row
+    %h2
+      マイページ！
+  .row
+    %ul.nav.nav-tabs
+      %li.nav-item
+        %a.nav-link{ href:'#tab1',  'data-toggle': 'tab' }
+          timeline
+      %li.nav-item
+        %a.nav-link{ href:'#tab2',  'data-toggle': 'tab' }
+          follow
+      %li.nav-item
+        %a.nav-link{ href:'#tab3',  'data-toggle': 'tab' }
+          follower
+      %li.nav-item
+        %a.nav-link{ href:'#tab4',  'data-toggle': 'tab' }
+          settings
+
+  .row
+    .tab-content
+      .tab-pane.active#tab1
+        = render 'timeline', timeline: @timeline
+      .tab-pane#tab2
+        = render 'userlist', users: @follows
+      .tab-pane#tab3
+        = render 'userlist', users: @followers
+      .tab-pane#tab4
+        = render 'setting'

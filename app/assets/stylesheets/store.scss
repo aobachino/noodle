@@ -1,0 +1,22 @@
+#form{
+    background-color: white;
+    width:200px;
+    height: 20px;
+    border: 1px green solid;
+}
+#form input{
+    vertical-align: top;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+#input{
+    width: 150px;
+    border: none;
+    border-right: 1px green solid;
+}
+#submit{
+    width: 50px;
+    border: none;
+}

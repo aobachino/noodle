@@ -1,0 +1,8 @@
+- if @stores
+  %ul
+  - @stores.each do |store|
+    %li
+      = store.name
+- else
+  %p
+    = @message

@@ -1,0 +1,33 @@
+.container
+  .row
+    %form{:action => "",:method => "get"}
+      %table.ppp{:border => "1"}
+        %tr
+          %th.form カテゴリ
+          %td
+            %select#station-pref
+              %option{:name => "category", :selected => "selected", :value => ""}
+              %option{:value => "hokkaido"} 家系
+              %option{:value => "aomori"} 二郎系
+              %option{:value => "iwate"} まぜそば
+              %option{:value => "iwate"} 担々麺
+        %tr
+          %th.form 店舗名
+          %td
+            %input{:name => "storeNm", :type => "text"}/
+        %tr
+          %th.form 最寄り駅
+          %td
+            %input{:name => "station", :type => "text"}/
+        %tr
+          %th.form 金額上限
+          %td
+            %input{:name => "maxPrice", :type => "text"}/
+        %tr
+          %th.form 金額下限
+          %td
+            %input{:name => "minPrice", :type => "text"}/
+      %input{:type => "submit", :value => "検索", class: 'btn-primary'}/
+      %input{:onclick => "history.back()", :type => "button", :value => "戻る",class: 'btn-primary'}/
+      %input{:type => "reset", :value => "クリア",class: 'btn-primary'}/
+    %hr/

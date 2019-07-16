@@ -1,0 +1,7 @@
+%article#page--top
+  .container
+    .row
+      %form{:id => "form",:class => "serch", :action => "store/search", :method => "get", :placeholder => "検索"}
+        %input{:id => "input exampleInputEmail1", :name => "word", :size => "40",class: 'col-form-label form-control'}
+        %input{:id => "submit exampleInputEmail1", :type => "submit", :value => "🔍", class: 'btn-primary'}
+      %a{:href => 'store/detailSerch'}詳細検索
